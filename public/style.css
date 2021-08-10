@@ -107,6 +107,10 @@ img {
   justify-content: center;
   margin-top: 2rem;
 }
+
+.container a {
+  text-decoration: none;
+}
 /*------ Question section ------- */
 #main-wrapper {
   width: 50rem;
