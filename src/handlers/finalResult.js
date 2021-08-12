@@ -1,10 +1,14 @@
+import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 import { getDOMElement } from '../utils/DOMUtils.js';
-export const finalResultFn = ()=> {
-    // here we replace the next-question by the get-result button
-    const endButton = getDOMElement('btn-4');
-    endButton.classList.add('hide');
-    const resultButton = getDOMElement('get-result');
-    resultButton.classList.remove('hide');
+
+export const changeButtonText = ()=> {
+  const endButton = getDOMElement(NEXT_QUESTION_BUTTON_ID);
+  endButton.textContent = "Result";
+}
+
+export const showFinalResultFn = ()=> {
+    
+    const resultButton = getDOMElement(NEXT_QUESTION_BUTTON_ID);
 
     // here we hide the timer and target the question container (main-wrapper)
     const timer2 = getDOMElement('btn-3');
@@ -27,7 +31,9 @@ export const finalResultFn = ()=> {
       scoreButton.classList.add('centered');
       restartButton.classList.remove('hide');
       resultButton.classList.add('hide');
-      restartButton.style.marginLeft = 'calc(50% - 80px)';
+      restartButton.style.marginLeft = 'auto';
+      restartButton.style.marginRight = 'auto';
+      
       scoreText.innerText = `Your Final Score is : ${scoreSpan}`;
     };
     resultButton.addEventListener('click', hideContainer);

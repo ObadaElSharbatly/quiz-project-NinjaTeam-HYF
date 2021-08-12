@@ -20,7 +20,7 @@ import {
 import {
   activateTimerFn
 } from '../views/timer.js';
-import { finalResultFn } from '../handlers/finalResult.js';
+import { changeButtonText, showFinalResultFn } from '../handlers/finalResult.js';
 
 //the showCurrentQuestion function will push the current question to the screen and activate the timer.
 export const showCurrentQuestion = () => {
@@ -41,11 +41,15 @@ export const handleNextQuestion = () => {
   quizData.currentQuestionIndex = quizData.currentQuestionIndex + 1;
   const nextQuestionButton = getDOMElement(NEXT_QUESTION_BUTTON_ID);
   nextQuestionButton.removeEventListener('click', nextQuestion);
-
+  if (quizData.currentQuestionIndex === quizData.questions.length -1) {
+    //showCurrentQuestion();
+    changeButtonText();
+  }
+  showCurrentQuestion();
   // here we write code for the final page score and define the restart button
-  if (quizData.currentQuestionIndex === quizData.questions.length) {
-    finalResultFn();
+  /* else if (quizData.currentQuestionIndex === quizData.questions.length) {
+    showFinalResultFn();
     } else {
     showCurrentQuestion();
-  }
+  } */
 };

@@ -3,6 +3,7 @@ import { getDOMElement } from '../utils/DOMUtils.js';
 import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 import { nextQuestion } from '../listeners/questionListeners.js';
 import { deactivateTimerFn } from '../views/timer.js';
+import { showFinalResultFn } from '../handlers/finalResult.js';
 
 const scoreEl = getDOMElement('score');
 scoreEl.textContent = 0;
@@ -17,7 +18,9 @@ export const checkAnswer = function selectedAnswer() {
   // activating the next question button after choosing:
   const nextQuestionButton = getDOMElement(NEXT_QUESTION_BUTTON_ID);
   nextQuestionButton.addEventListener('click', nextQuestion);
-  
+  if (quizData.currentQuestionIndex === quizData.questions.length -1) {
+    showFinalResultFn();
+  }
   // targeting the answers buttons to work on it:
   const buttonsCon = this.parentElement.parentElement;
   const answerButtons = buttonsCon.querySelectorAll('button');

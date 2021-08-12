@@ -15,7 +15,7 @@ export const quizData = {
   currentQuestionIndex: 0,
   // the questions in the quiz
   questions: [
-    {
+    /* {
       text: 'What are the different ways to declare a JS variable?',
       answers: {
         a: 'constant, let, variable',
@@ -215,7 +215,7 @@ export const quizData = {
             'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters',
         },
       ],
-    },
+    }, */
     {
       text: `What is the result for this code >>
       let fName = "Ninja";
@@ -252,7 +252,7 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-      timer: 15,
+      timer: 5,
       links: [
         {
           text: 'javascript.info',
