@@ -1,8 +1,7 @@
 # Getting Started
-![screenshot of the app](public\img\app-screenshot.JPG)
-This repository functions as the basis of the quiz project in the [Browsers module](https://github.com/HackYourFuture/Browsers). Before the first group meeting, have a look through this code and try to understand how it works and how it is organized. We will explain the idea behind the structure below as well as the Backlog (which will identify what is needed to be implemented).
+![screenshot of the app](https://raw.githubusercontent.com/ObadaElSharbatly/quiz-project-NinjaTeam-HYF/main/public/img/app-screenshot.JPG)
 
-We have already implemented a very basic UI that can go through the questions to show you how this kind of code is split and how you can use the structure to your advantage. Have a look through it before your first group meeting as it can take a little while to get your head around it!
+This is a quiz app which we made as students team of Hack Your Future class #33 .. and the amazing thing that it produce most of elements by javascript.
 
 ## check broject
 See project demo from ==>  [here](https://obadaelsharbatly.github.io/quiz-project-NinjaTeam-HYF/)
