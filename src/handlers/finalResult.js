@@ -33,6 +33,9 @@ export const showFinalResultFn = ()=> {
       resultButton.classList.add('hide');
       restartButton.style.marginLeft = 'auto';
       restartButton.style.marginRight = 'auto';
+      const scoreSpan = getDOMElement('score').textContent;
+
+      
       
       scoreText.innerText = `Your Final Score is : ${scoreSpan}`;
     };

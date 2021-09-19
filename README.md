@@ -1,11 +1,11 @@
 # Getting Started
-
+![Image of Yaktocat](public\img\app.screenshot.JPG)
 This repository functions as the basis of the quiz project in the [Browsers module](https://github.com/HackYourFuture/Browsers). Before the first group meeting, have a look through this code and try to understand how it works and how it is organized. We will explain the idea behind the structure below as well as the Backlog (which will identify what is needed to be implemented).
 
 We have already implemented a very basic UI that can go through the questions to show you how this kind of code is split and how you can use the structure to your advantage. Have a look through it before your first group meeting as it can take a little while to get your head around it!
 
 ## check broject
-our live project : https://obadaelsharbatly.github.io/quiz-project-NinjaTeam-HYF/
+See project demo from ==>  [here](https://obadaelsharbatly.github.io/quiz-project-NinjaTeam-HYF/)
 ## Development
 
 To run this project locally you will need to open `index.html` in your browser using a local server. LiveServer, `http-server`, `study-lenses`, or any other local static server will work.
@@ -41,9 +41,6 @@ index.html
 - `views` this contains code to define what the DOM will look like. They will create the DOM element and give it back. They should never read from/write to the dom, that is what the handlers do.
 - `data.js` this is our data model. Anything we need to store in the browser we place inside the data file
 
-# Project layout design:
-it's not profissional :D but just can use it to start
-![layout design image](tenQProject.jpg)
 
 # Backlog
 
@@ -53,23 +50,23 @@ So what should be built? Below is a collection of user stories you can choose fr
 
 > these are necessary for basic usability
 
-- [ ] A user can see one question at a time, stepping through the quiz
-- [ ] A user can select an answer for each question
-- [ ] A user can know which questions they got correct and incorrect (either immediately or at the end of the quiz)
-- [ ] A user can see the correct answer for questions (either immediately or at the end of the quiz)
-- [ ] A user can see their score at the end of the quiz
+- [x] A user can see one question at a time, stepping through the quiz
+- [x] A user can select an answer for each question
+- [x] A user can know which questions they got correct and incorrect (either immediately or at the end of the quiz)
+- [x] A user can see the correct answer for questions (either immediately or at the end of the quiz)
+- [x] A user can see their score at the end of the quiz
 
 ## Nice-to-Haves
 
 > if time, add more features!
 
-- [ ] A user can see their score update in real-time as they select answers
+- [x] A user can see their score update in real-time as they select answers
 - [ ] A user can modify a question in the quiz
 - [ ] A user has access to resources for further study on each question
 - [ ] A user can "cheat" to see the correct answer, this forfeits the question
 - [ ] A user can remove questions from the quiz
 - [ ] A user can add questions to the quiz
-- [ ] Anything else you can think of... go nuts!
+- [x] Anything else you can think of... go nuts!
 
 # Ninja's Team
 
