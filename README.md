@@ -1,7 +1,7 @@
 # Getting Started
 ![screenshot of the app](https://raw.githubusercontent.com/ObadaElSharbatly/quiz-project-NinjaTeam-HYF/main/public/img/app-screenshot.JPG)
 
-This is a quiz app which we made as students team of Hack Your Future class #33 .. and the amazing thing that it produce most of elements by javascript.
+This is a quiz app which we made as students team of Hack Your Future class 33 .. and the amazing thing that it produce most of elements by javascript.
 
 ## check broject
 See project demo from ==>  [here](https://obadaelsharbatly.github.io/quiz-project-NinjaTeam-HYF/)
